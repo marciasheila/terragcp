@@ -14,6 +14,12 @@
  * limitations under the License.
  */
 
+provider "google" {
+  region = var.default_region
+  credentials = file("C:/marciap/Terraform/keys/mspggcptrainkeys.json")
+  project = var.project_id
+}
+
 /*************************************************
   Bootstrap GCP Organization.
 *************************************************/

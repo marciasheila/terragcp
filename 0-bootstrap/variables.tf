@@ -19,6 +19,10 @@ variable "org_id" {
   type        = string
 }
 
+ variable "project_id"{
+    type = string
+ }
+
 variable "billing_account" {
   description = "The ID of the billing account to associate projects with."
   type        = string
